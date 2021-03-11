@@ -6,11 +6,15 @@
 
   <groupId>com.jingxc.study</groupId>
   <artifactId>springcloud2020</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>cloud-provider-gesoten8001</module>
+      <module>cloud-api-commons</module>
+      <module>cloud-consumer-zookeeper80</module>
+    </modules>
 
-
-
-  <properties>
+    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <java.version>1.8</java.version>
@@ -20,7 +24,7 @@
     <log4j.version>1.2.17</log4j.version>
     <mysql.version>5.1.47</mysql.version>
     <druid.version>1.1.16</druid.version>
-    <mybatis.spring.boot.version>2.1.1</mybatis.spring.boot.version>
+    <mybatis.spring.boot.version>3.1.2</mybatis.spring.boot.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -45,11 +49,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <dependency>
-        <groupId>org.mybatis.spring.boot</groupId>
-        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
         <version>${mybatis.spring.boot.version}</version>
       </dependency>
+
       <!--spring cloud 阿里巴巴-->
       <dependency>
         <groupId>com.alibaba.cloud</groupId>
@@ -63,7 +69,6 @@
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>${mysql.version}</version>
-        <scope>runtime</scope>
       </dependency>
       <!-- druid-->
       <dependency>
