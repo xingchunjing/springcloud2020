@@ -12,6 +12,8 @@
         <module>cloud-provider-gesoten8001</module>
       <module>cloud-api-commons</module>
       <module>cloud-consumer-zookeeper80</module>
+      <module>cloud-consumer-consul80</module>
+        <module>cloud-consumer-nacos80</module>
     </modules>
 
     <properties>
