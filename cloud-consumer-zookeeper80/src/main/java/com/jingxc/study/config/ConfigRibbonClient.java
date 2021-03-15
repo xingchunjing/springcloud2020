@@ -1,0 +1,1 @@
+package com.jingxc.study.config;import org.springframework.cloud.netflix.ribbon.RibbonClient;import org.springframework.context.annotation.Configuration;@Configuration@RibbonClient(name = "cloud-consumer-zookeeper",configuration = ApplicationContextConfig.class)public class ConfigRibbonClient {}
