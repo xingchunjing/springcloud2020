@@ -15,6 +15,7 @@
       <module>cloud-consumer-consul80</module>
         <module>cloud-consumer-nacos80</module>
         <module>cloud-provider-gesoten8002</module>
+        <module>cloud-consumer-feign80</module>
     </modules>
 
     <properties>
