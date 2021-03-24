@@ -1,0 +1,1 @@
+package study.service;public interface GesotenProviderService {    /**     * 测试服务降级     * @param id     */    String providerHystrix(Integer id) ;}
